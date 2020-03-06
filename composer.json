@@ -1,0 +1,13 @@
+{
+    "name": "ipfsoftwares/response-formatter",
+    "description": "Laravel php api response formatter",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dahabu saidi",
+            "email": "dahabusaidi@gmail.com"
+        }
+    ],
+    "require": {}
+}
