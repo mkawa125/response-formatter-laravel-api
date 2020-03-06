@@ -12,14 +12,12 @@ class Formatter
     public const statusNotFound = 404;
     public const statusUnkown = 500;
 
-    private $res;
     private $status;
     private $message;
     private $metadata;
     private $data;
 
-    function __construct($res, $status, $message,  $metadata, $data) {
-        $this->res = $res; 
+    function __construct($message,  $metadata, $data, $status) {
         $this->status = $status;
         $this->message = $message; 
         $this->metadata = $metadata; 
@@ -30,7 +28,11 @@ class Formatter
     {
         if (($this->status == self::statusOk) || ($this->status == self::statusNoContent)) {
             
-            return response()->json($this->data);
+            return response()->json([
+                'message' => $this->message,
+                'metadata' => $this->metadata,
+                'data' => $this->data,
+            ], $this->status);
         }else {
             return response()->json($this->message);
         }
