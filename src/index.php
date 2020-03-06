@@ -4,6 +4,7 @@ namespace IPFSoftwares\ResponseFormatter;
 class Formatter
 {
     /** Define constants */
+    
     public const statusOk = 200;
     public const statusNoContent = 204;
     public const statusUnAuthorized = 401;
@@ -11,6 +12,9 @@ class Formatter
     public const statusForbidden = 403;
     public const statusNotFound = 404;
     public const statusUnkown = 500;
+
+
+    /** Declare constructor parametors */
 
     private $status;
     private $message;
