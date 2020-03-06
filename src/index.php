@@ -34,7 +34,9 @@ class Formatter
                 'data' => $this->data,
             ], $this->status);
         }else {
-            return response()->json($this->message);
+            return response()->json([
+                'message' => $this->message
+            ], $this->status);
         }
     }
 }
