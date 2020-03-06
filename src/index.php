@@ -1,10 +1,12 @@
 <?php
 namespace IPFSoftwares\ResponseFormatter;
 
-class Formatter
+use Illuminate\Support\Facades\Facade;
+
+class Formatter extends Facade
 {
     /** Define constants */
-    
+
     public const statusOk = 200;
     public const statusNoContent = 204;
     public const statusUnAuthorized = 401;
