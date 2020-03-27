@@ -9,5 +9,17 @@
             "email": "dahabusaidi@gmail.com"
         }
     ],
-    "require": {}
+
+    "autoload": {
+        "psr-4": {
+            "IPFSoftwares\\ResponseFormatter\\": "src"
+        }
+    },
+
+    "require": {},
+
+    "require-dev": {
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^8.5"
+    }
 }
