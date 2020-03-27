@@ -1,5 +1,5 @@
 <?php
-namespace IPFSoftwares\ResponseFormatter\Facade;
+namespace IPFSoftwares\ResponseFormatter;
 
 use Illuminate\Support\Facades\Facade;
 
