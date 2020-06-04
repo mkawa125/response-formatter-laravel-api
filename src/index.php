@@ -28,7 +28,7 @@ class Formatter extends Facade
         $this->message = $message; 
         $this->metadata = $metadata; 
         $this->data = $data; 
-  }
+    }
 
     public function format()
     {

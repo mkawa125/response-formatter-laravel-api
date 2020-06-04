@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use \PHPUNit\Framework\TestCase;
+use Illuminate\Support\Facades\Log;
 
 class ExampleTest extends TestCase
 {
